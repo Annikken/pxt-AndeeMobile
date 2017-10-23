@@ -1,0 +1,17 @@
+{
+    "name": "AndeeMobile Microbit",
+    "version": "0.5.0",
+    "description": "Microbit Package for Annikken AndeeMobile",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": false
+}
