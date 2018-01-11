@@ -97,6 +97,7 @@ namespace AndeeMobile{
 	export function carDoor(): void {
 		pins.digitalWritePin(DigitalPin.P9,1);
 		basic.pause(2000);
+		pins.digitalWritePin(DigitalPin.P9,0);
 	}
 	/**
 	 * Turn all power off 
