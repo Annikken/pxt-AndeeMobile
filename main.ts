@@ -79,7 +79,7 @@ namespace AndeeMobile {
         pins.digitalWritePin(DigitalPin.P7, taillight);
     }
 	/**
-	 * Car Horn plays a tone in x number of milliseconds
+	 * Car Horn plays a tone for a duration in milliseconds
 	 * @param tone Car Horn plays tone, eg:Note.C
 	 * @param duration In milliseconds, eg:300
 	 */
