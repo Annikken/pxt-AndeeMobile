@@ -1,6 +1,6 @@
 {
     "name": "AndeeMobile",
-    "version": "0.5.2",
+    "version": "0.5.3",
     "description": "Microbit Package for Annikken AndeeMobile",
     "license": "MIT",
     "dependencies": {
