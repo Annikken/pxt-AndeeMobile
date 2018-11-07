@@ -86,7 +86,7 @@ namespace AndeeMobile {
     //% blockId=Car_Horn
     //% block="Play Car Horn|%note=device_note| for %duration"
     //% advanced=false
-    export function carHorn(tone:Note, duration): void {
+    export function carHorn(tone:Note, duration:number): void {
         music.playTone(tone,duration);
     }
 	/**
