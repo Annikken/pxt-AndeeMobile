@@ -12,7 +12,7 @@ namespace AndeeMobile {
     //% advanced=false
     export function andeeMobileBegin(): void {
         led.enable(false);
-		pins.analogSetPitchPin(AnalogPin.P3);
+        pins.analogSetPitchPin(AnalogPin.P3);
     }
 
 	/**
@@ -85,9 +85,10 @@ namespace AndeeMobile {
 	 */
     //% blockId=Car_Horn
     //% block="Play Car Horn|%note=device_note| for %duration"
+    //% parts="headphone"
     //% advanced=false
-    export function carHorn(tone:Note, duration:number): void {
-        music.playTone(tone,duration);
+    export function carHorn(tone: Note, duration: number): void {
+        music.playTone(tone, duration);
     }
 	/**
 	 * Open/Close Car Door 
