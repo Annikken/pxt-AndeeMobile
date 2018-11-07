@@ -12,6 +12,7 @@ namespace AndeeMobile {
     //% advanced=false
     export function andeeMobileBegin(): void {
         led.enable(false);
+		pins.analogSetPitchPin(AnalogPin.P3);
     }
 
 	/**
@@ -78,14 +79,15 @@ namespace AndeeMobile {
         pins.digitalWritePin(DigitalPin.P7, taillight);
     }
 	/**
-	 * Switch Car Horn On/Off
-	 * @param horn Turn Car Horn On/Off , eg:Switch.On
+	 * Car Horn plays a tone in x number of milliseconds
+	 * @param tone Car Horn plays tone, eg:Note.C
+	 * @param duration In milliseconds, eg:300
 	 */
     //% blockId=Car_Horn
-    //% block="Turn Car Horn %horn"
+    //% block="Play Car Horn|%note=device_note| for %duration"
     //% advanced=false
-    export function carHorn(horn: Switch): void {
-        pins.digitalWritePin(DigitalPin.P3, horn);
+    export function carHorn(tone:Note, duration): void {
+        music.playTone(tone,duration);
     }
 	/**
 	 * Open/Close Car Door 
