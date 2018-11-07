@@ -84,10 +84,10 @@ namespace AndeeMobile {
 	 * @param duration In milliseconds, eg:300
 	 */
     //% blockId=Car_Horn
-    //% block="Play Car Horn|%note=device_note| for %duration"
+    //% block="Play Car |Horn %note=device_note| for %duration"
     //% parts="headphone"
     //% advanced=false
-    export function carHorn(tone: Note, duration: number): void {
+    export function carHorn(tone: number, duration: number): void {
         music.playTone(tone, duration);
     }
 	/**
